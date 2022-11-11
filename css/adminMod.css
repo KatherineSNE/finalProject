@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fredoka+One&family=Righteous&display=swap');
+
+:root{
+    --yellow:rgb(221, 165, 9);
+    --green:rgb(72, 129, 11);
+    --blue:rgb(19, 134, 201);
+    --purple:rgb(76, 6, 185);
+    --newpink: rgb(196, 14, 81);
+    --audio:'Audiowide', cursive;
+    --fredoka:'Fredoka One', cursive;
+    --right:'Righteous', cursive;
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: auto;
+    padding: 4vh;
+    gap: 1vw 2vh;
+    width: 100%; 
+
+}
+
+input,textarea{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+img{
+    height: 10vh;
+    grid-column: 1;
+    grid-row: auto;
+    border: solid 2px white;
+    border-top-right-radius:20px;
+    border-bottom-left-radius: 20px;
+}
+
+form{
+    grid-column: 2;
+}
+form{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: auto;
+    gap: 2vw 2vh;
+    padding: 4vh;
+}
+
+input[name=name_partyitem]{
+    grid-column: 1;
+    grid-row: auto;
+    width: 15vw;
+}
+
+ 
+
+input[name=image_partyitem]{
+    grid-column: 2;
+    grid-row: auto;
+    width: 15vw;
+}
+
+textarea{
+    grid-column: 3;
+    grid-row: auto;
+    width:25vw;
+}
+
+input[name=visibility_partyitem]{
+    grid-column: 4;
+    grid-row: auto;
+    width: 2vw;
+    justify-self: center;
+}
+
+input[name=id_type_partyitem]{
+    grid-column: 5;
+    grid-row: auto;
+    width: 2vw;
+    justify-self: center;
+ 
+}
+input[name=update_db]{
+    grid-column: 6;
+    grid-row: auto;
+    width: 6vw;
+    background-color: var(--yellow);
+    color: black;
+    font-family: var(--fredoka);
+    font-size: 1rem;
+    cursor: pointer;
+    border-top-right-radius:20px;
+    border-bottom-left-radius: 20px;
+    justify-self: center;
+}
+
+input[name=choose]{
+    grid-column: 7;
+    grid-row: auto;
+    height:5vh;
+    width: 5vw;
+}
+
+input[name=del_db]{
+    grid-column: 8;
+    grid-row: auto;
+    width: 6vw;
+    background-color: var(--newpink);
+    color: black;
+    font-family: var(--fredoka);
+    font-size: 1rem;
+    cursor: pointer;
+    border-top-right-radius:20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+ 
+
+
+form>label{
+    font: 1.6rem var(--right);
+    text-align: left;
+    color: var(--blue);
+
+}
+
+p{
+    color: var(--green);
+    font-size: 1rem;
+    font-family: var(--fredoka);
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin: 12vh 0 0 0;
+}
+

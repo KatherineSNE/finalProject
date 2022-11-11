@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fredoka+One&family=Righteous&display=swap');
+
+:root{
+    /*?-------------------------------
+    /*?          COLOURS
+    /*?-------------------------------*/
+    --yellow:rgb(221, 165, 9);
+    --green:rgb(72, 129, 11);
+    --blue:rgb(19, 134, 201);
+    --purple:rgb(76, 6, 185);
+    --newpink: rgb(196, 14, 81);
+    --bgcolor:rgb(0,0,0);
+    --audio:'Audiowide', cursive;
+    --fredoka:'Fredoka One', cursive;
+    --right:'Righteous', cursive;
+
+    /*?-------------------------------
+    /*?        FLEX
+    /*?-------------------------------*/
+
+    --f:flex;
+    --c:center;
+    --col:column;
+}
+
+/* hide scrollbar but allow scrolling */
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+
+html{
+    background-color: var(--bgcolor);
+}
+
+header{
+    background-image: url(../image/partytimelogo.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 10rem;
+    width: 100%;
+}
+
+section{
+    display: var(--f);
+    flex-direction: var(--col);
+    height: 60vh;
+    width: 100vw;
+    justify-content: var(--c);
+    align-items: var(--c);
+  
+}
+
+
+p:nth-of-type(1){
+    color: var(--blue);
+   font-family:var(--audio);
+   font-size: 2rem;
+   margin-top: 20vh;
+   text-align: center;
+}
+p:nth-of-type(2){
+    color: var(--green);
+    font-family: var(--fredoka);
+    font-size: 2rem;
+    margin-top: 5vh;
+}
+p:nth-of-type(3){
+    color: var(--yellow);
+    font-family: var(--audio);
+    font-size: 2rem;
+}
+p:nth-of-type(4){
+    font-family: var(--audio);
+    color:var(--purple);
+    font-size: 1.5rem;
+}
+
+p:nth-of-type(5){
+    font-family: var(--fredoka);
+    font-size:3rem;
+    color: var(--newpink);
+    margin-top:-5vh;
+}

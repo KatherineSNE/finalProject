@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fredoka+One&family=Righteous&display=swap');
+
+:root{
+    --yellow:rgb(221, 165, 9);
+    --green:rgb(72, 129, 11);
+    --blue:rgb(19, 134, 201);
+    --purple:rgb(76, 6, 185);
+    --newpink: rgb(196, 14, 81);
+    --audio:'Audiowide', cursive;
+    --fredoka:'Fredoka One', cursive;
+    --right:'Righteous', cursive;
+}
+
+
+section{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;   
+}
+
+section>form:nth-child(1){
+    display: flex;
+    flex-direction:column;
+    height: 70%;
+}
+
+
+input:-webkit-autofill {       
+    transition: all 0s 50000s;     
+  }
+
+
+input{
+    height:4vh;
+    width: 30vw;
+    font-size:1.2rem;
+    margin-bottom: 3vh;
+    border: solid 3px var(--purple);
+    caret-color: var(--blue);
+    color: var(--blue);
+    border-top-right-radius:20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+    font-family: var(audio);
+    background-color: transparent;
+    text-align: center;
+  
+}
+
+form>label{
+    font: 1.6rem var(--right);
+    text-align: left;
+    color: var(--blue);
+
+}
+
+
+form>div:nth-child(12){
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+div>button:nth-child(1){
+    font-family: var(--fredoka);
+    font-size: 1rem;
+    color: black;
+    font-weight: normal;
+    height:5vh;
+    width:8vw;
+    border-top-right-radius:20px;
+    border-bottom-left-radius: 20px;
+    background-color: var(--green);
+}
+
+div>button:nth-child(2){
+    font-family: var(--fredoka);
+    font-size: 1rem;
+    height:5vh;
+    width: 20vw;
+    color: black;
+    border-top-right-radius:20px;
+    border-bottom-left-radius: 20px;
+    background-color: var(--newpink);
+}
+
+
+    
+
+
+
+
+
+

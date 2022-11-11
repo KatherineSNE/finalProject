@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fredoka+One&family=Righteous&display=swap');
+
+:root{
+    --yellow:rgb(221, 165, 9);
+    --green:rgb(72, 129, 11);
+    --blue:rgb(19, 134, 201);
+    --purple:rgb(76, 6, 185);
+    --newpink: rgb(196, 14, 81);
+    --bgcolor:black;
+    --audio:'Audiowide', cursive;
+    --fredoka:'Fredoka One', cursive;
+    --right:'Righteous', cursive;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: var(--bgcolor);
+}
+
+
+header{
+    background-image: url(../image/partytimelogo.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 10rem;
+    width: 100%;
+}
+
+li{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 112%;
+    font-family: var(--right);
+    color:lightgray;
+}
+
+a:nth-of-type(1):hover{
+    color:var(--purple);
+}
+
+a:nth-of-type(2):hover{
+    color:var(--blue);
+}
+
+a:nth-of-type(3):hover{
+    color:var(--newpink);
+}
+
+a:nth-of-type(4):hover{
+    color:var(--green);
+}
+
+a:nth-of-type(5):hover{
+    color:var(--yellow);
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+}
+
+body {
+    -ms-overflow-style: none; /** for Internet Explorer, Edge */
+    scrollbar-width: none; /** for Firefox */
+    overflow-y: scroll; 
+}
+
+body::-webkit-scrollbar {
+    display: none; /** for Chrome, Safari, and Opera */
+}
+
+/*?----------------------------------------------------------------------------------------*/
+/*?  BOUTIQUE MODE SAMSUNG GALAXY FOLD BECAUSE NO ONE NEEDS SOMETHNG THIS SMALL!!!!!!
+/*?       NO DEV THANKS YOU SAMSUNG!!!!
+/*?------------------------------------------------------------------------------------------*/
+@media only screen and (max-width:280px){
+
+    /* a{
+        font-size: 0.8rem;
+    } */
+
+    header{
+        height:6rem;
+    }
+}
